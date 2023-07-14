@@ -1,0 +1,177 @@
+.menu {
+    position: fixed;
+    top: 10;
+    left: 0;
+    width: 190px !important; 
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1.00);
+    padding-top: 16px;
+    /* border: 1px solid rgba(176, 133, 241, 1.00); */
+}
+
+.menu-top {
+    padding-left: 12px;
+    padding-right: 8px;
+    height: 40px;
+}
+
+.logo {
+    padding-top: 2px;
+}
+
+.union {
+    color: rgba(176, 133, 241, 1.00);
+    padding: 12px;
+    float: right;
+}
+
+.menu-user {
+    margin-top: 12px;
+    height: 40px;
+    padding: 0 8px 0 12px;
+}
+
+.menu-user-img {
+    width: 40px;
+    float: left;
+
+}
+
+.user-image {
+    border-radius: 400px;
+}
+
+.menu-user-info {
+    height: 40px;
+    margin-left: 8px;
+    padding: 3px 0;
+    float: left;
+}
+
+.menu-user-usermane {
+    height: 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.menu-user-post {
+    height: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(128, 132, 134, 1);
+}
+
+
+
+.menu-general {
+    margin-top: 32px;
+    padding: 0 12px 0 12px;
+    height: 184px;
+}
+
+.menu-settings {
+    margin-top: 24px;
+    padding: 0 12px 0 12px;
+    height: 120px;
+}
+
+.menu-list-name {
+    color: rgba(179, 181, 183, 1);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.menu-list-name {
+    height: 24px;
+    line-height: 24px;
+}
+
+.menu-list ul {
+    padding-left: 0;
+    list-style-type: none;
+    height: 32px;
+    margin-bottom: 0px;
+}
+
+.menu-list-item {
+    height: 32px;
+    padding: 0 8px;
+}
+
+.menu-list-item div {
+    float: left;
+}
+
+.menu-list-icon img {
+    height: 16px;
+    width: 16px;
+    line-height: 24px;
+    margin-bottom: 1px;
+}
+
+.menu-list span {
+    margin-left: 14px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+/* .menu-top svg {
+    color: rgba(176, 133, 241, 1.00);
+    height: 20px !important;
+    padding-top: 10px;
+} */
+
+/* .menu-user-img img{
+    width: 40px;
+    height: 40px;
+}
+
+.menu-user-info {
+    padding-left: 20px !important;
+}
+
+.menu-user-post {
+    color: rgba(185, 187, 188, 1.00);
+}
+
+.menu-general {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.menu ul {
+    padding-left: 10px;
+}
+
+.menu li {
+    width: 100%;
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.menu li:hover {
+    background-color: rgba(176, 133, 241, 1.00);
+    border-radius: 8px;
+}
+
+.menu-list svg {
+    color: lightgray;
+    padding-right: 10px;
+}
+
+.menu-list-name {
+    color: rgba(211, 211, 212, 1.00);
+    padding-left: 0 !important;
+    letter-spacing: 0.05em;
+    margin-bottom: 5px;
+}
+
+.menu-list span {
+    padding-left: 25px;
+} */

@@ -1,0 +1,144 @@
+.team {
+    padding: 40px 40px 0 40px !important;
+}
+
+.team-header {
+    height: 36px;
+    line-height: 36px;
+}
+
+.team-header-left {
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 3px 8px;
+}
+
+.team-header-right {
+    text-align: right;
+}
+
+.team-header-right div {
+    display: inline-block;  
+}
+
+.team-header-add-btn button {
+    background-color: rgba(158, 125, 254, 1);
+    border-radius: 4px;
+    border: 1px solid rgba(158, 125, 254, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    width: 141px;
+}
+
+.team-header-add-btn img {
+    margin: 0 0 3px 5px;
+}
+
+.team-header-import-btn button {
+    margin-left: 16px;
+    background-color: rgba(242, 244, 248, 1);
+    border-radius: 4px;
+    border: 1px solid rgba(197, 177, 254, 1);
+    color: rgba(158, 125, 254, 1);
+    font-size: 12px;
+    width: 135px;
+}
+
+.team-header-import-btn img {
+    margin: 0 0 2px 5px;
+}
+
+.team-table {
+    margin-top: 40px;
+}
+
+.team-filters {
+    height: 56px;
+}
+
+.team-filters div{
+    display: inline-block;
+}
+
+.team-search {
+    min-width: 280px;
+}
+
+.team-search input{
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(226, 216, 255, 1);
+    border-radius: 8px;
+    padding-top: 12px; 
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 30px;
+    outline: none;
+    width: 233px;
+    margin-right: 3px;
+}
+
+.team-search svg {
+    margin-left: 10px;
+    margin-top: 17px;
+    position: absolute;
+}
+
+.team-filter-control {
+    margin-right: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 8px;
+    padding-top: 12px; 
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    min-width: 722px;
+}
+
+.team-table-header {
+    background-color: rgba(250, 251, 252, 1);
+    height: 40px;
+    line-height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* .team-table-header div {
+    display: inline;
+} */
+
+.team-table-header-left {
+    float: left;
+    color: rgba(128, 132, 134, 1);
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 12px;
+}
+
+.team-table-header-right {
+    text-align: right;
+}
+
+.team-table-header-right span {
+    color: rgba(151, 119, 242, 1);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 5px;
+}
+
+.team-table-list table {
+    border-spacing: 10px 2;
+    border-collapse: inherit;
+    width: 100%;
+}
+
+.team-table-list tr {
+  padding: 3px;
+}
+
+.team-table-list td {
+    margin: 5px;
+  border: 1px solid red;
+
+}
