@@ -54,15 +54,11 @@
 }
 
 .team-filters {
-    height: 56px;
+    display: flex;
 }
 
 .team-filters div{
-    display: inline-block;
-}
-
-.team-search {
-    min-width: 280px;
+    display: flex;
 }
 
 .team-search input{
@@ -76,11 +72,12 @@
     outline: none;
     width: 233px;
     margin-right: 3px;
+    height: 32px;
 }
 
 .team-search svg {
     margin-left: 10px;
-    margin-top: 17px;
+    margin-top: 20px;
     position: absolute;
 }
 
@@ -90,10 +87,38 @@
     border: 1px solid rgba(238, 238, 238, 1);
     border-radius: 8px;
     padding-top: 12px; 
-    padding-right: 16px;
     padding-bottom: 12px;
     padding-left: 8px;
-    min-width: 722px;
+    width: calc(100% - 280px);
+}
+
+.team-filter-control-input {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(78, 83, 86, 1);
+    letter-spacing: 0.4px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 16px;
+    margin-right: 8px;
+    padding: 6px 10px;
+}
+
+.team-filter-control-input svg {
+    padding: 6px 0 6px 8px ;
+}
+
+.team-filter-control-reset {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(151, 119, 242, 1);
+    letter-spacing: 0.4px;
+    text-align: right;
+    margin-left: auto;
+    padding: 6px 0;
+}
+
+.team-filter-control-reset svg {
+    padding: 0 8px;
 }
 
 .team-table-header {
@@ -103,10 +128,6 @@
     padding: 8px;
     border-radius: 8px;
 }
-
-/* .team-table-header div {
-    display: inline;
-} */
 
 .team-table-header-left {
     float: left;
@@ -123,22 +144,127 @@
 .team-table-header-right span {
     color: rgba(151, 119, 242, 1);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     padding: 0 5px;
 }
 
 .team-table-list table {
-    border-spacing: 10px 2;
+    border-spacing: 0 2px ;
     border-collapse: inherit;
     width: 100%;
 }
 
 .team-table-list tr {
   padding: 3px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
 }
 
 .team-table-list td {
-    margin: 5px;
-  border: 1px solid red;
-
+    height: 56px;
+    padding: 12px 0 12px 15px;
 }
+
+.team-table-list img {
+    margin-right: 15px;
+    float: left;
+}
+
+.col-table {
+    width: 120px;
+}
+
+.team-table-list-user {
+    padding-top: 6px;
+}
+
+.team-table-list-contract {
+    text-align: right;
+    padding-right: 15px !important;
+}
+
+.team-table-list-header {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgba(179, 181, 183, 1);
+}
+
+.team-table-list-header svg {
+    padding-right: 4px;
+}
+
+.team-table-list-name {
+    font-size: 14px;
+    color: rgba(151, 119, 242, 1);
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.1px;
+}
+
+.team-table-list-post {
+    font-size: 12px;
+    color: rgba(189, 189, 189, 1);
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.4px;
+}
+
+.team-table-list-type {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgba(27, 34, 38, 1);
+}
+
+.team-table-list-project {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+    color: rgba(151, 119, 242, 1);
+}
+
+.team-table-list-team {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgba(128, 132, 134, 1);
+}
+
+.team-table-list-country {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgba(128, 132, 134, 1);
+}
+
+.team-table-list-contract-disabled {
+    text-align: right;
+    padding-right: 15px !important;
+}
+
+.team-table-list-contract-disabled span {
+    border: 1px solid rgba(223, 228, 238, 1);
+    border-radius: 16px;
+    background-color: rgba(252, 252, 253, 1);
+    color: rgba(192, 202, 221, 1);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 4px 9px;
+}
+
+.team-table-list-contract-active {
+    text-align: right;
+    padding-right: 15px !important;
+}
+
+.team-table-list-contract-active span {
+    border: 1px solid rgba(194, 228, 195, 1);
+    border-radius: 16px;
+    background-color: rgba(237, 247, 237, 1);
+    color: rgba(76, 175, 80, 1);
+    font-size: 10px;
+    font-weight: 500;
+    padding: 4px 9px;
+}
+
