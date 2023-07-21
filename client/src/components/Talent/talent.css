@@ -1,0 +1,439 @@
+.talent {
+    padding: 40px;
+}
+
+.talent-back {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(151, 119, 242, 1);
+    margin-bottom: 24px;
+}
+
+.talent-back svg {
+    padding-right: 8px;
+    padding-bottom: 2px;
+}
+
+
+/* HEADER */
+
+
+.talent-header {
+    display: flex;
+}
+
+.talent-header-image img {
+    height: 72px;
+    width: 72px;
+    border-radius: 400px;
+    margin-right: 16px;
+}
+
+.talent-header-user {
+    display: flex;
+}
+
+.talent-header-username {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(27, 34, 38, 1);
+}
+
+.talent-header-user-post {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    color: rgba(128, 132, 134, 1);
+}
+
+.talent-header-user-status {
+    padding-left: 16px ;
+    padding-top: 4px;
+}
+
+.talent-header-user-status span {
+    color: rgba(76, 175, 80, 1);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    border: 1px solid rgba(194, 228, 195, 1);
+    border-radius: 16px;
+    background-color: rgba(237, 247, 237, 1);
+    padding: 3px 10px;
+}
+
+
+/* CARDS */
+
+
+.talent-cards {
+    display: flex;
+    margin-top: 24px;
+}
+
+
+/* CARDS LEFT */
+
+
+.talent-cards-left {
+    width: calc(50% - 8px);
+}
+
+
+/* CARDS LEFT CONTRACTS */
+
+
+.talent-cards-left-contracts {
+    padding: 24px 24px 32px 24px;
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.talent-cards-left-contracts-header {
+    display: flex;
+    width: calc(100% - 8px);
+    padding: 0 4px;
+}
+
+.talent-cards-left-contracts-header-left {
+    width: calc(100% - 16px);
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(151, 119, 242, 1);
+}
+
+.talent-cards-left-contracts-header svg {
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.talent-cards-left-contracts-context-stroke {
+    border: 1px solid rgba(242, 243, 243, 1);
+    border-radius: 8px;
+    background-color: rgba(250, 250, 250, 1);
+    padding: 16px;
+    display: flex;
+    margin-top: 16px;
+}
+
+.talent-cards-left-contracts-context-stroke-left-top {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    color: rgba(33, 33, 33, 1);
+}
+
+.talent-cards-left-contracts-context-stroke-left-top svg {
+    padding: 0 8px 2px 8px;
+}
+
+.talent-cards-left-contracts-context-stroke-left-top span {
+    font-size: 10px;
+    font-weight: 500;
+    border: 1px solid rgba(194, 228, 195, 1);
+    border-radius: 16px;
+    background-color: rgba(237, 247, 237, 1);
+    color:rgba(76, 175, 80, 1);
+    margin-left: 8px;
+    margin-bottom: 1px;
+    padding: 3px 10px;
+}
+
+.talent-cards-left-contracts-context-stroke-left-bottom {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(128, 132, 134, 1);
+}
+
+.talent-cards-left-contracts-context-stroke-right {
+    margin-left: auto;
+    text-align: right;
+}
+
+.talent-cards-left-contracts-context-stroke-right-top {
+    font-size: 14px;
+    font-weight: 500;
+    color:rgba(33, 33, 33, 1);
+}
+
+.talent-cards-left-contracts-context-stroke-right-bottom {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(128, 132, 134, 1);
+}
+
+
+/* CARDS LEFT VARIABLES */
+
+
+.talent-cards-left-variables {
+    padding: 24px 24px 32px 24px;
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);   
+    margin-top: 16px; 
+}
+
+.talent-cards-left-variables-header {
+    width: calc(100% - 8px);
+    padding: 0 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(151, 119, 242, 1);
+}
+
+.talent-cards-left-variables-header svg {
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.talent-cards-left-variables-stroke {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(250, 250, 250, 1);
+    display: flex;
+}
+
+.talent-cards-left-variables-stroke-left {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: rgba(78, 83, 86, 1);
+}
+
+.talent-cards-left-variables-stroke-right {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    color: rgba(78, 83, 86, 1);
+    margin-left: auto;
+}
+
+.talent-cards-left-variables-stroke-bottom {
+    width: calc(100% - 16px);
+    padding: 3px 8px 0 8px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgba(128, 132, 134, 1);
+}
+
+
+/* CARD LEFT GENERAL INFO */
+
+.talent-cards-left-general {
+    padding: 24px 24px 32px 24px;
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);   
+    margin-top: 16px; 
+}
+
+.talent-cards-left-general-header {
+    width: calc(100% - 8px);
+    padding: 0 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(151, 119, 242, 1);
+    margin-bottom: 16px;
+}
+
+.talent-cards-left-general-header svg {
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+
+.talent-cards-left-general-content-stroke {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(250, 250, 250, 1);
+    display: flex;
+}
+
+.talent-cards-left-general-content-stroke-left {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: rgba(78, 83, 86, 1);
+    width: 35%;
+}
+
+.talent-cards-left-general-content-stroke-right {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    color: rgba(78, 83, 86, 1);
+}
+
+
+/* CONTACTS */
+
+.talent-cards-left-contacts {
+    padding: 24px 24px 32px 24px;
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);   
+    margin-top: 16px; 
+}
+
+.talent-cards-left-contacts-header {
+    width: calc(100% - 8px);
+    padding: 0 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(151, 119, 242, 1);
+    margin-bottom: 16px;
+}
+
+.talent-cards-left-contacts-header svg {
+    margin-right: 8px;
+}
+
+.talent-cards-left-contacts-content-stroke {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(250, 250, 250, 1);
+    display: flex;
+}
+
+.talent-cards-left-contacts-content-stroke-left {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: rgba(78, 83, 86, 1);
+    width: 35%;
+}
+
+.talent-cards-left-contacts-content-stroke-right {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    color: rgba(78, 83, 86, 1);
+}
+
+/* SPACING */
+
+.talent-cards-spacing {
+    width: 16px;
+}
+
+
+/* CARDS RIGHT */
+
+.talent-cards-left-contacts-header-right {
+    text-align: right;
+}
+
+.talent-cards-right {
+    width: calc(50% - 8px);
+}
+
+.talent-cards-right-block {
+    margin-top: 8px;
+    padding: 24px 24px 32px 24px;
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.talent-cards-right-tabs {
+    border: 1px solid rgba(230, 230, 231, 1);
+    border-radius: 8px;
+    background-color: rgba(250, 250, 250, 1);
+    display: flex;
+}
+
+.talent-cards-right-tabs .active {
+    border: 1px solid rgba(197, 177, 254, 1);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: rgba(151, 119, 242, 1);
+    background-color: rgba(245, 242, 255, 1);
+}
+
+.talent-cards-right-tab {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    color: rgba(179, 181, 183, 1);
+    padding: 8px;
+    width: 25%;
+    text-align: center;
+}
+
+.talent-cards-right-btn {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(151, 119, 242, 1);
+    letter-spacing: 0.4px;
+    text-align: right;
+    padding: 16px;
+}
+
+.talent-cards-right-btn svg {
+    padding-right: 8px;
+    padding-bottom: 3px;
+}
+
+.talent-cards-right-content-stroke {
+    margin-bottom: 16px;
+    display: flex;
+    border: 1px solid rgba(242, 243, 243, 1);
+    background-color: rgba(250, 250, 250, 1);
+    padding: 16px;
+}
+
+.talent-cards-right-content-stroke-left-date {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: rgba(151, 119, 242, 1);
+    margin-bottom: 4px;
+}
+
+.talent-cards-right-content-stroke-left-hours {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgba(128, 132, 134, 1);
+}
+
+.talent-cards-right-content-stroke-left-hours span {
+    color: rgba(27, 34, 38, 1);
+}
+
+.talent-cards-right-content-stroke-right {
+    text-align: right;
+    margin-left: auto;
+}
+
+.talent-cards-right-content-stroke-right-price {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    color: rgba(33, 33, 33, 1);
+    margin-bottom: 4px;
+}
+
+.talent-cards-right-content-stroke-right-project {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgba(128, 132, 134, 1);
+}
+
+.talent-cards-right-pages {
+    text-align: center;
+}
+
+
+

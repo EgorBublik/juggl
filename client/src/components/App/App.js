@@ -4,6 +4,7 @@
 // import { Routes, Route, Navigate, useNavigate} from "react-router-dom";
 // import { history } from '../../history/history';
 import Menu from '../Menu/Menu';
+import Talent from '../Talent/Talent';
 import Team from '../Team/Team';
 import './App.css';
 
@@ -12,7 +13,8 @@ function App() {
     <div className=''>
       <Menu />
       <div className="App">
-          <Team />
+          {/* <Team /> */}
+          <Talent />
       </div>
     </div>
     
