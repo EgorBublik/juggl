@@ -1,4 +1,5 @@
 import './menu.css';
+import { NavLink } from 'react-router-dom';
 import Union from '../icons/union.svg'
 import Logo from '../icons/Logo.svg'
 import User from '../icons/user.svg'
@@ -49,12 +50,14 @@ function Menu() {
                 <span className=''>Home</span> 
               </li>
 
-              <li className='menu-list-item'>
-                <div className='menu-list-icon'>
-                  <img className='menu-list-img' src={Team} alt='team'/>
-                </div>
-                <span className=''>Team</span> 
-              </li>
+              <NavLink to={`/team`} style={{ textDecoration: 'none'}}>
+                  <li className='menu-list-item'>
+                    <div className='menu-list-icon'>
+                      <img className='menu-list-img' src={Team} alt='team'/>
+                    </div>
+                    <span className=''>Team</span> 
+                  </li>
+              </NavLink>
 
               <li className='menu-list-item'>
                 <div className='menu-list-icon'>

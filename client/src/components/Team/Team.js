@@ -5,6 +5,7 @@ import User1 from '../icons/user1.svg'
 import User2 from '../icons/user2.svg'
 import User3 from '../icons/user3.svg'
 import User4 from '../icons/user4.svg'
+import { NavLink } from 'react-router-dom';
 
 function Team() {
   return (
@@ -143,36 +144,43 @@ function Team() {
                         </td>
                     </tr>
 
-                    <tr>
-                        <td>
-                            <img className='user-image' src={User1} alt='user'/>
-                            <div className="team-table-list-user ">
-                                <div className='team-table-list-name'>Giacomina Otaegui</div>
-                                <div className='team-table-list-post'>Cloud Security specialist </div>
-                            </div>
+                    
+                        <tr>
+                        
+                            <td>
+                                <img className='user-image' src={User1} alt='user'/>
+                                <div className="team-table-list-user ">
+                                    <div className='team-table-list-name'>
+                                        <NavLink to={'/talent'} >
+                                            Giacomina Otaegui
+                                        </NavLink>
+                                    </div>
+                                    
+                                    <div className='team-table-list-post'>Cloud Security specialist </div>
+                                </div>
+                                
+                            </td>
                             
-                        </td>
-                        
-                        <td className='team-table-list-type col-table'>
-                            Employee
-                        </td>
-                        
-                        <td className='team-table-list-project col-table'>
-                            ASF
-                        </td>
-                        
-                        <td className='team-table-list-team col-table'>
-                            Marketing
-                        </td>
-                        
-                        <td className='team-table-list-country col-table'>
-                            Spain
-                        </td>
-                        
-                        <td className='team-table-list-contract-disabled col-table'>
-                            <span>TERMINATED</span> 
-                        </td>
-                    </tr>
+                            <td className='team-table-list-type col-table'>
+                                Employee
+                            </td>
+                            
+                            <td className='team-table-list-project col-table'>
+                                ASF
+                            </td>
+                            
+                            <td className='team-table-list-team col-table'>
+                                Marketing
+                            </td>
+                            
+                            <td className='team-table-list-country col-table'>
+                                Spain
+                            </td>
+                            
+                            <td className='team-table-list-contract-disabled col-table'>
+                                <span>TERMINATED</span> 
+                            </td>
+                        </tr>
                     
                     <tr>
                         <td>
