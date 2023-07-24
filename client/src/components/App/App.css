@@ -50,6 +50,7 @@
 
 body {
   font-family: 'Roboto' !important;
+  min-width: 1280px;
 }
 
 .App {

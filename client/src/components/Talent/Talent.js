@@ -1,6 +1,11 @@
 import './talent.css';
 import User1 from '../icons/user1.svg'
+import { useState } from 'react'
+
 function Talent() {
+
+  const [isActive, setIsActive] = useState('Payouts')
+  
   return (
     <div className="talent">
       
@@ -327,11 +332,10 @@ function Talent() {
           <div className="talent-cards-right-block">
           
             <div className="talent-cards-right-tabs">
-              <div className="talent-cards-right-tab active">Payouts</div>
-              <div className="talent-cards-right-tab">Requests</div>
-              <div className="talent-cards-right-tab">Days off</div>
-              <div className="talent-cards-right-tab">Bonuses</div>
-
+              <div className={`talent-cards-right-tab ${isActive === 'Payouts' ? ' active' : ''}`} onClick={() => setIsActive('Payouts')}>Payouts</div>
+              <div className={`talent-cards-right-tab ${isActive === 'Requests' ? ' active' : ''}`} onClick={() => setIsActive('Requests')}>Requests</div>
+              <div className={`talent-cards-right-tab ${isActive === 'Days' ? ' active' : ''}`} onClick={() => setIsActive('Days')}>Days off</div>
+              <div className={`talent-cards-right-tab ${isActive === 'Bonuses' ? ' active' : ''}`} onClick={() => setIsActive('Bonuses')}>Bonuses</div>
             </div>
           
             <div className="talent-cards-right-btn">
@@ -346,145 +350,610 @@ function Talent() {
 
             <div className="talent-cards-right-content">
 
-              <div className="talent-cards-right-content-stroke">
-                
-                <div className="talent-cards-right-content-stroke-left">
-                
-                  <div className="talent-cards-right-content-stroke-left-date">
-                    May 2023
+              <div className={`talent-cards-right-content-payouts ${isActive === 'Payouts' ? ' active' : 'disabled'}`}>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>160 </span> / 160 hours
+                    </div>
+                  
                   </div>
-                
-                  <div className="talent-cards-right-content-stroke-left-hours">
-                    <span>160 </span> / 160 hours
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      3, 500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
                   </div>
-                
                 </div>
-                
-                <div className="talent-cards-right-content-stroke-right">
 
-                  <div className="talent-cards-right-content-stroke-right-price">
-                    3, 500 $
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>160 </span> / 160 hours
+                    </div>
+                  
                   </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
 
-                  <div className="talent-cards-right-content-stroke-right-project">
-                    Project
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      3, 500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
                   </div>
-
                 </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>160 </span> / 160 hours
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      3, 500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>160 </span> / 160 hours
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      3, 500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>160 </span> / 160 hours
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      3, 500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
 
-              <div className="talent-cards-right-content-stroke">
-                
-                <div className="talent-cards-right-content-stroke-left">
-                
-                  <div className="talent-cards-right-content-stroke-left-date">
-                    May 2023
+              <div className={`talent-cards-right-content-requests ${isActive === 'Requests' ? ' active' : 'disabled'}`}>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
                   </div>
-                
-                  <div className="talent-cards-right-content-stroke-left-hours">
-                    <span>160 </span> / 160 hours
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
                   </div>
-                
                 </div>
-                
-                <div className="talent-cards-right-content-stroke-right">
 
-                  <div className="talent-cards-right-content-stroke-right-price">
-                    3, 500 $
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
                   </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
 
-                  <div className="talent-cards-right-content-stroke-right-project">
-                    Project
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
                   </div>
-
                 </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
 
-              <div className="talent-cards-right-content-stroke">
-                
-                <div className="talent-cards-right-content-stroke-left">
-                
-                  <div className="talent-cards-right-content-stroke-left-date">
-                    May 2023
+              <div className={`talent-cards-right-content-days ${isActive === 'Days' ? ' active' : 'disabled'}`}>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      <span>01.12.2023</span>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47136 2.86195C8.21101 2.6016 7.7889 2.6016 7.52855 2.86195C7.26821 3.1223 7.26821 3.54441 7.52855 3.80476L11.0571 7.33335H3.33329C2.9651 7.33335 2.66663 7.63183 2.66663 8.00002C2.66663 8.36821 2.9651 8.66669 3.33329 8.66669H11.0571L7.52855 12.1953C7.26821 12.4556 7.26821 12.8777 7.52855 13.1381C7.7889 13.3984 8.21101 13.3984 8.47136 13.1381L13.1376 8.4719C13.1392 8.47029 13.1408 8.46868 13.1424 8.46705C13.26 8.34721 13.3328 8.18311 13.3333 8.00202C13.3333 8.00135 13.3333 8.00069 13.3333 8.00002C13.3333 7.99935 13.3333 7.99869 13.3333 7.99802C13.333 7.90836 13.3151 7.82286 13.2827 7.74483C13.2509 7.66799 13.2041 7.59588 13.1424 7.53299C13.1408 7.53139 13.1392 7.52979 13.1376 7.52821M8.47136 2.86195L13.1376 7.52821L8.47136 2.86195Z" fill="#C5B1FE"/>
+                      </svg>
+                      <span>14.12.2023</span>
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      Description
+                    </div>
+                  
                   </div>
-                
-                  <div className="talent-cards-right-content-stroke-left-hours">
-                    <span>160 </span> / 160 hours
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-vacation">
+                      Vacation
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
                   </div>
-                
                 </div>
-                
-                <div className="talent-cards-right-content-stroke-right">
 
-                  <div className="talent-cards-right-content-stroke-right-price">
-                    3, 500 $
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      <span>01.12.2023</span>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47136 2.86195C8.21101 2.6016 7.7889 2.6016 7.52855 2.86195C7.26821 3.1223 7.26821 3.54441 7.52855 3.80476L11.0571 7.33335H3.33329C2.9651 7.33335 2.66663 7.63183 2.66663 8.00002C2.66663 8.36821 2.9651 8.66669 3.33329 8.66669H11.0571L7.52855 12.1953C7.26821 12.4556 7.26821 12.8777 7.52855 13.1381C7.7889 13.3984 8.21101 13.3984 8.47136 13.1381L13.1376 8.4719C13.1392 8.47029 13.1408 8.46868 13.1424 8.46705C13.26 8.34721 13.3328 8.18311 13.3333 8.00202C13.3333 8.00135 13.3333 8.00069 13.3333 8.00002C13.3333 7.99935 13.3333 7.99869 13.3333 7.99802C13.333 7.90836 13.3151 7.82286 13.2827 7.74483C13.2509 7.66799 13.2041 7.59588 13.1424 7.53299C13.1408 7.53139 13.1392 7.52979 13.1376 7.52821M8.47136 2.86195L13.1376 7.52821L8.47136 2.86195Z" fill="#C5B1FE"/>
+                      </svg>
+                      <span>14.12.2023</span>
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      Description
+                    </div>
+                  
                   </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
 
-                  <div className="talent-cards-right-content-stroke-right-project">
-                    Project
+                    <div className="talent-cards-right-content-stroke-right-vacation">
+                      Vacation
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
                   </div>
-
                 </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      <span>01.12.2023</span>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47136 2.86195C8.21101 2.6016 7.7889 2.6016 7.52855 2.86195C7.26821 3.1223 7.26821 3.54441 7.52855 3.80476L11.0571 7.33335H3.33329C2.9651 7.33335 2.66663 7.63183 2.66663 8.00002C2.66663 8.36821 2.9651 8.66669 3.33329 8.66669H11.0571L7.52855 12.1953C7.26821 12.4556 7.26821 12.8777 7.52855 13.1381C7.7889 13.3984 8.21101 13.3984 8.47136 13.1381L13.1376 8.4719C13.1392 8.47029 13.1408 8.46868 13.1424 8.46705C13.26 8.34721 13.3328 8.18311 13.3333 8.00202C13.3333 8.00135 13.3333 8.00069 13.3333 8.00002C13.3333 7.99935 13.3333 7.99869 13.3333 7.99802C13.333 7.90836 13.3151 7.82286 13.2827 7.74483C13.2509 7.66799 13.2041 7.59588 13.1424 7.53299C13.1408 7.53139 13.1392 7.52979 13.1376 7.52821M8.47136 2.86195L13.1376 7.52821L8.47136 2.86195Z" fill="#C5B1FE"/>
+                      </svg>
+                      <span>14.12.2023</span>
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      Description
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-vacation">
+                      Sick leave
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      <span>01.12.2023</span>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47136 2.86195C8.21101 2.6016 7.7889 2.6016 7.52855 2.86195C7.26821 3.1223 7.26821 3.54441 7.52855 3.80476L11.0571 7.33335H3.33329C2.9651 7.33335 2.66663 7.63183 2.66663 8.00002C2.66663 8.36821 2.9651 8.66669 3.33329 8.66669H11.0571L7.52855 12.1953C7.26821 12.4556 7.26821 12.8777 7.52855 13.1381C7.7889 13.3984 8.21101 13.3984 8.47136 13.1381L13.1376 8.4719C13.1392 8.47029 13.1408 8.46868 13.1424 8.46705C13.26 8.34721 13.3328 8.18311 13.3333 8.00202C13.3333 8.00135 13.3333 8.00069 13.3333 8.00002C13.3333 7.99935 13.3333 7.99869 13.3333 7.99802C13.333 7.90836 13.3151 7.82286 13.2827 7.74483C13.2509 7.66799 13.2041 7.59588 13.1424 7.53299C13.1408 7.53139 13.1392 7.52979 13.1376 7.52821M8.47136 2.86195L13.1376 7.52821L8.47136 2.86195Z" fill="#C5B1FE"/>
+                      </svg>
+                      <span>14.12.2023</span>
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      Description
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-vacation">
+                      Vacation
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      <span>01.12.2023</span>
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47136 2.86195C8.21101 2.6016 7.7889 2.6016 7.52855 2.86195C7.26821 3.1223 7.26821 3.54441 7.52855 3.80476L11.0571 7.33335H3.33329C2.9651 7.33335 2.66663 7.63183 2.66663 8.00002C2.66663 8.36821 2.9651 8.66669 3.33329 8.66669H11.0571L7.52855 12.1953C7.26821 12.4556 7.26821 12.8777 7.52855 13.1381C7.7889 13.3984 8.21101 13.3984 8.47136 13.1381L13.1376 8.4719C13.1392 8.47029 13.1408 8.46868 13.1424 8.46705C13.26 8.34721 13.3328 8.18311 13.3333 8.00202C13.3333 8.00135 13.3333 8.00069 13.3333 8.00002C13.3333 7.99935 13.3333 7.99869 13.3333 7.99802C13.333 7.90836 13.3151 7.82286 13.2827 7.74483C13.2509 7.66799 13.2041 7.59588 13.1424 7.53299C13.1408 7.53139 13.1392 7.52979 13.1376 7.52821M8.47136 2.86195L13.1376 7.52821L8.47136 2.86195Z" fill="#C5B1FE"/>
+                      </svg>
+                      <span>14.12.2023</span>
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      Description
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-vacation">
+                      Vacation
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
 
-              <div className="talent-cards-right-content-stroke">
-                
-                <div className="talent-cards-right-content-stroke-left">
-                
-                  <div className="talent-cards-right-content-stroke-left-date">
-                    May 2023
+              <div className={`talent-cards-right-content-bonuses ${isActive === 'Bonuses' ? ' active' : 'disabled'}`}>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
                   </div>
-                
-                  <div className="talent-cards-right-content-stroke-left-hours">
-                    <span>160 </span> / 160 hours
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
                   </div>
-                
                 </div>
-                
-                <div className="talent-cards-right-content-stroke-right">
 
-                  <div className="talent-cards-right-content-stroke-right-price">
-                    3, 500 $
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
                   </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
 
-                  <div className="talent-cards-right-content-stroke-right-project">
-                    Project
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
                   </div>
-
                 </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="talent-cards-right-content-stroke">
+                  
+                  <div className="talent-cards-right-content-stroke-left">
+                  
+                    <div className="talent-cards-right-content-stroke-left-date">
+                      May 2023
+                    </div>
+                  
+                    <div className="talent-cards-right-content-stroke-left-hours">
+                      <span>Description </span>
+                    </div>
+                  
+                  </div>
+                  
+                  <div className="talent-cards-right-content-stroke-right">
+
+                    <div className="talent-cards-right-content-stroke-right-price">
+                      500 $
+                    </div>
+
+                    <div className="talent-cards-right-content-stroke-right-project">
+                      Project
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
 
-              <div className="talent-cards-right-content-stroke">
-                
-                <div className="talent-cards-right-content-stroke-left">
-                
-                  <div className="talent-cards-right-content-stroke-left-date">
-                    May 2023
-                  </div>
-                
-                  <div className="talent-cards-right-content-stroke-left-hours">
-                    <span>160 </span> / 160 hours
-                  </div>
-                
-                </div>
-                
-                <div className="talent-cards-right-content-stroke-right">
-
-                  <div className="talent-cards-right-content-stroke-right-price">
-                    3, 500 $
-                  </div>
-
-                  <div className="talent-cards-right-content-stroke-right-project">
-                    Project
-                  </div>
-
-                </div>
-              </div>
-              
             </div>
 
             <div className="talent-cards-right-pages">
-              Pages
+              
+              <div className="talent-cards-right-pages-block-spacing"></div>
+              
+              <div className="talent-cards-right-pages-block talent-cards-right-pages-block-page">
+                <span>Rows per page:</span> 
+                10 
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.528606 0.528596C0.788955 0.268247 1.21107 0.268247 1.47141 0.528596L5.00001 4.05719L8.52861 0.528596C8.78896 0.268247 9.21107 0.268247 9.47141 0.528596C9.73176 0.788946 9.73176 1.21106 9.47141 1.47141L5.47141 5.47141C5.21107 5.73175 4.78896 5.73175 4.52861 5.47141L0.528606 1.47141C0.268256 1.21106 0.268256 0.788946 0.528606 0.528596Z" fill="#B3B5B7"/>
+                </svg>
+
+              </div>
+              
+              <div className="talent-cards-right-pages-block">
+                1-5 of 13
+              </div>
+              
+              <div className="talent-cards-right-pages-block talent-cards-right-pages-block-arrow">
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.47138 0.528596C5.73173 0.788946 5.73173 1.21106 5.47138 1.47141L1.94279 5L5.47138 8.5286C5.73173 8.78895 5.73173 9.21106 5.47138 9.47141C5.21103 9.73176 4.78892 9.73176 4.52858 9.47141L0.528575 5.47141C0.268226 5.21106 0.268226 4.78895 0.528575 4.5286L4.52858 0.528596C4.78892 0.268247 5.21103 0.268247 5.47138 0.528596Z" fill="#B3B5B7"/>
+                </svg>
+
+                <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.528575 0.528596C0.788925 0.268247 1.21103 0.268247 1.47138 0.528596L5.47138 4.5286C5.73173 4.78895 5.73173 5.21106 5.47138 5.47141L1.47138 9.47141C1.21103 9.73176 0.788925 9.73176 0.528575 9.47141C0.268226 9.21106 0.268226 8.78895 0.528575 8.5286L4.05717 5L0.528575 1.47141C0.268226 1.21106 0.268226 0.788946 0.528575 0.528596Z" fill="#B3B5B7"/>
+                </svg>
+              </div>
 
             </div>
 

@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className=''>
+    <div className='root'>
       <Menu />
       <div className="App">
         <Routes>

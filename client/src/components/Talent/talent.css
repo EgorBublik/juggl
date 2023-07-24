@@ -368,6 +368,8 @@
     padding: 8px;
     width: 25%;
     text-align: center;
+    cursor: pointer;
+    /* display: none; */
 }
 
 .talent-cards-right-btn {
@@ -384,6 +386,14 @@
     padding-bottom: 3px;
 }
 
+.talent-cards-right-content .active {
+    display: block;
+}
+
+.talent-cards-right-content .disabled {
+    display: none;
+}
+
 .talent-cards-right-content-stroke {
     margin-bottom: 16px;
     display: flex;
@@ -398,6 +408,16 @@
     letter-spacing: 0.1px;
     color: rgba(151, 119, 242, 1);
     margin-bottom: 4px;
+}
+
+.talent-cards-right-content-stroke-left-date span{
+    font-weight: 400;
+    letter-spacing: 0.17px;
+    color: rgba(27, 34, 38, 1);
+}
+
+.talent-cards-right-content-stroke-left-date svg {
+    padding: 0 8px 2px 8px;
 }
 
 .talent-cards-right-content-stroke-left-hours {
@@ -424,6 +444,14 @@
     margin-bottom: 4px;
 }
 
+.talent-cards-right-content-stroke-right-vacation {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: rgba(33, 33, 33, 1);
+    margin-bottom: 4px;
+}
+
 .talent-cards-right-content-stroke-right-project {
     font-size: 12px;
     font-weight: 400;
@@ -433,7 +461,37 @@
 
 .talent-cards-right-pages {
     text-align: center;
+    display: flex;
 }
+
+
+.talent-cards-right-pages-block-spacing {
+    width: 40% !important;    
+}
+
+.talent-cards-right-pages div {
+    width: 20%;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    color: rgba(78, 83, 86, 1)
+}
+
+.talent-cards-right-pages span {
+    color: rgba(128, 132, 134, 1);
+    margin-right: 8px;
+}
+
+.talent-cards-right-pages-block-page svg {
+    margin-left: 4px;
+    padding-bottom: 1px;
+}
+
+.talent-cards-right-pages-block-arrow svg {
+    padding: 0 12px;
+}
+
+
 
 
 
